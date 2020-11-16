@@ -1,0 +1,310 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/872aea0a36.js" crossorigin="anonymous">
+  </script>
+
+  <!-- ______________FORM___________________ -->
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous">
+  </script>
+
+  <!-- _________________________________ -->
+
+  <script src="script.js"></script>
+
+  <title>LAST WORDS · Epilogo
+  </title>
+
+</head>
+
+<body class="black">
+
+  <section class="finale">
+
+    <div class="top">
+
+      <div class="subtitle">
+
+        Siamo arrivati fino a qui
+
+      </div>
+
+    </div>
+
+    <div class="bottom">
+
+    </div>
+
+    <div class="top">
+
+      <div class="subtitle">
+
+        e qualunque sia stata la tua scelta
+
+      </div>
+
+    </div>
+
+    <div class="bottom">
+
+    </div>
+
+    <div class="top">
+
+      <div class="subtitle">
+
+        avresti voluto fare qualcosa di diverso
+
+      </div>
+
+    </div>
+
+    <div class="bottom">
+
+    </div>
+
+    <div class="top">
+
+      <div class="subtitle glitch">
+
+        vero?
+
+      </div>
+
+    </div>
+
+    <div class="bottom">
+
+    </div>
+
+    <div class="top" style="justify-content: center;">
+
+      <div class="title">
+        Last words
+      </div>
+
+    </div>
+    <div class="bottom">
+
+      <div class="scrollup">
+
+        <div class="icon">
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="speech" style="display: block;">
+
+    <div class="header">
+      <div class="calendar">
+        · epilogo ·
+      </div>
+
+    </div>
+
+    <div class="container">
+
+      <div class="frankie">
+        <div class="balloon">
+          <div class="text">
+            Se soltanto potessi tornare indietro...
+          </div>
+        </div>
+      </div>
+
+      <div class="generic">
+        <div class="balloon orange">
+          <div class="text">
+            Saresti andato da lei
+          </div>
+        </div> <br>
+
+        <div class="balloon orange">
+          <div class="text">
+            Avresti sistemato tutto
+          </div>
+        </div> <br>
+
+        <div class="balloon orange">
+          <div class="text">
+            Ora sareste ancora felici insieme
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="choose">
+      <div class="text">
+        Vuoi cambiare il tuo passato?
+      </div>
+    </div>
+
+    <div class="button">
+      <a href="scelta.html" class="choice text">
+        Torni indietro
+      </a>
+    </div>
+
+    <div class="or">
+      <div class="text">
+        O accetti il presente?
+      </div>
+    </div>
+
+    <div class="button higher16">
+      <a class="choice text" onclick='reveal("part2"), reveal("part3")' href="#part2" >
+        Vai avanti
+      </a>
+    </div>
+
+  </section>
+
+  <section class="speech ending" id="part2">
+
+    <div class="top">
+
+      <div class="subtitle">
+
+        Sicuramente c'è una persona a cui vorresti parlare per un'ultima volta
+
+      </div>
+
+    </div>
+
+    <div class="bottom">
+
+    </div>
+
+    <div class="top">
+
+      <div class="subtitle">
+
+        Forse è una persona con cui, per un motivo o per un altro, non hai più possibilità di entrare in contatto
+
+      </div>
+
+    </div>
+
+    <div class="bottom">
+
+    </div>
+
+    <div class="top">
+
+      <div class="subtitle">
+
+        Be', oggi è il tuo giorno fortunato
+
+      </div>
+
+    </div>
+
+    <div class="bottom">
+
+    </div>
+
+    <div class="top">
+
+      <div class="subtitle chance">
+
+        Hai l'occasione per mandarle un ultimo messaggio
+
+      </div>
+
+    </div>
+
+    <div class="bottom">
+
+    </div>
+
+    <div class="top">
+
+      <div class="subtitle">
+
+        Scegli bene le tue ultime parole.
+
+      </div>
+
+    </div>
+
+    <div class="bottom">
+
+    </div>
+
+  </section>
+
+  <section class="mail" id="part3">
+
+    <form id="myForm">
+      <div class="header">
+
+        <div class="container" >
+
+          <div class="data">
+            <div class="label">
+              Destinatario
+            </div>
+          <div class="address">
+            Una persona nel passato
+          </div>
+
+          </div>
+          <div class="data">
+            <div class="label">
+              Oggetto
+            </div>
+
+            <div class="object">
+              Un'ultima cosa
+            </div>
+          </div>
+          <div class="divider"></div>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <div id="inputWrapper">
+          <textarea placeholder="Scrivi il tuo messaggio" id="message" class="insert-message" name="message"></textarea>
+        </div>
+      </div>
+
+    </form>
+
+    <div class="choose">
+      <div class="text" id="yousure">
+        Non vuoi scrivere neanche una parola?
+      </div>
+    </div>
+
+    <div class="button">
+      <div onclick="SubForm(), waiting(), setTimeout(credits, 2000)" class="continue text" id="final-button" >
+        Non ho niente da dire
+      </div>
+    </div>
+
+  </section>
+
+</body>
+
+</html>
