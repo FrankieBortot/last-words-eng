@@ -258,11 +258,32 @@ html {
 }
 
 .dark .follow .text, {
-  color:#05ffff;
+  color: #05ffff;
 }
 
 .black .follow .text, {
   color: #fff;
+}
+
+.speech.language {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 12px;
+}
+
+.language .thistext {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 8px;
+  max-width: 850px;
+  padding: 36px 16px;
 }
 
 /* ------------------- ANIMAZIONE BATTITO CUORE-------------------*/
@@ -497,7 +518,7 @@ html {
   .calendar {
     font-size: 24px;
     line-height: 24px;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
     padding: 32px 0px;
   }
 }
@@ -703,6 +724,21 @@ html {
   font-style: oblique;
   font-weight: 700;
   letter-spacing: 1px;
+}
+
+.languageSelected {
+  display: inline;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.language .chevron {
+  padding-left: 8px;;
+}
+
+.language .text {
+  text-align: center;
 }
 
 @media only screen and (max-width: 425px) {
@@ -1049,6 +1085,26 @@ html {
 
 
 /* ---------------- BUTTON ---------------- */
+
+.changeLanguage {
+ box-sizing: border-box;
+ font-family: 'Raleway', sans-serif;
+ color: #25005b;
+ background-color: rgba(163, 157, 255, 0.2);
+ letter-spacing: 2px;
+ text-decoration: none;
+ text-align: center;
+ cursor: pointer;
+ max-width: 500px;
+ margin: 48px 16px;
+ padding: 12px 24px;
+ border-radius: 50px;
+
+}
+
+.changeLanguage:hover {
+  text-decoration: underline;
+}
 
 
 .button {
