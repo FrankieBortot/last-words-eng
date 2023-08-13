@@ -50,16 +50,17 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  margin-bottom: 10vh;
 }
 
 
-.month, .title {
+.chapter, .title {
   font-family: 'Nunito', sans-serif;
   font-size: 100px;
   line-height: 100px;
   font-weight: 900;
-  text-transform: uppercase;
   letter-spacing: 12px;
+  text-transform: capitalize;
   text-align: center;
   text-shadow: 4px 4px 0px #f60ccc, -4px -4px 0px #05ffff;
 }
@@ -75,7 +76,7 @@ html {
 }
 
 @media only screen and (max-width: 850px) {
-  .month {
+  .chapter {
     font-size: 12vw;
     line-height: 12vw;
     letter-spacing: 1vw;
@@ -84,39 +85,47 @@ html {
 }
 
 @media only screen and (max-width: 650px) {
-  .month, .title {
+  .chapter, .title {
     text-shadow: 3px 3px 0px #f60ccc, -3px -3px 0px #05ffff;
   }
 }
 
 @media only screen and (max-width: 425px) {
-  .month, .title {
+  .chapter, .title {
     text-shadow: 2px 2px 0px #f60ccc, -2px -2px 0px #05ffff;
   }
 }
 
-.light .month, .light .title {
+.light .chapter, .light .title {
   color: #fff;
 }
 
-.dark .month, .dark .title {
+.dark .chapter, .dark .title {
   color: #000;
 }
 
-.chapter {
+.month {
   display: block;
   font-family: 'Special Elite', sans-serif;
   font-size: 40px;
   line-height: 40px;
-  font-weight: 400;
+  font-weight: 100;
   text-align: center;
+  text-transform: lowercase;
   letter-spacing: 16px;
-  margin-top: 36px;
-  margin-bottom: 10vh;
+  margin-bottom: 24px;
+}
+
+.month::after {
+ content: ' ·'
+}
+
+.month::before {
+  content: '· '
 }
 
 @media only screen and (max-width: 850px) {
-  .chapter {
+  .month {
     font-size: 5vw;
     line-height: 5vw;
     letter-spacing: 8px;
@@ -125,7 +134,7 @@ html {
 }
 
 @media only screen and (max-width: 425px) {
-  .chapter {
+  .month {
     font-size: 20px;
     line-height: 20px;
     letter-spacing: 8px;
@@ -133,18 +142,18 @@ html {
   }
 }
 
-.light .chapter {
+.light .month {
   color: #883030;
-  text-shadow: 0.5px 0px #883030;
+  /* text-shadow: 0.5px 0px #883030; */
 }
 
-.dark .chapter {
+.dark .month {
   color: #05ffff;
 }
 
-.black .chapter {
+.black .month {
   color: #fff;
-  text-shadow: 0.5px 0px #fff;
+  /* text-shadow: 0.5px 0px #fff; */
 }
 
 .subtitle {
