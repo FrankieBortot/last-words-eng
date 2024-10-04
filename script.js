@@ -6,7 +6,7 @@ function reveal(elementid) {
 
 function SubForm() {
   $.ajax({
-    url:'https://api.apispreadsheets.com/data/3245/',
+    url:'https://api.apispreadsheets.com/data/F3cMXO3p5zzNM2sN/',
     type:'post',
     data:$("#myForm").serializeArray(),
     success: function(){
